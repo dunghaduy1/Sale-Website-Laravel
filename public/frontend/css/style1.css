@@ -1,0 +1,201 @@
+
+.box-pro {
+    z-index: 1000px;
+}
+
+.ht-main-menu>nav>ul>li .menu-con>li {
+    width: 100px !important;
+}
+
+.shop-area .ht-product-tab .shop-results-wrapper .shop-results .sort-sx select {
+
+    width: auto !important;
+}
+
+.single-product-item .image-cus>a img {
+    min-height: 271px;
+    max-height: 271px;
+}
+
+/* product giới hạn chữ ở 2 dòng */
+.single-product-item .product-text .text-desc {
+    /* display: block; */
+    display: -webkit-box;
+    height: 117px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.single-product-item .product-text .pro-btn {
+    margin-top: 1em;
+}
+
+.single-product-item {
+    position: relative;
+}
+
+.product-image .pro-discount {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #78A206;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.pro-detail-discount {
+    position: absolute;
+    top: 11px;
+    left: -450px;
+    background: #78A206;
+    color: #fff;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    font-size: 22px;
+}
+
+.btn-green {
+    background: #78A206 !important;
+}
+
+.bg-green {
+    background: #78A206 !important;
+
+}
+.text-green {
+    color: #78A206 !important;
+}
+.text-green {
+    color: #78A206 !important;
+}
+.style-rating .rating .score .rating-number i.text-green {
+    color: #78A206 !important;
+}
+.sidebar-widget-option-wrapper ul li danh_muc_con {
+    display: none;
+}
+.rate-review {
+    width: 33%;
+}
+.danh-muc ul li a .text-cate {
+    font-size: 13px;
+}
+
+.danh-muc ul li ul li a .text-cate-s {
+    font-size: 12px;
+}
+/* //add style for 'on' mode */
+.star-rating .star-value{
+        background: url("myStar_on.svg") !important;
+}
+.product-review-tab-area .container .p-d-tab-container 
+.p-d-tab .tab-pane .tab-items .p-review-wrapper 
+.single-review-item .avatar img {
+    min-width: 53px;
+    min-height: 53px;
+}
+.qty-hide button{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    padding: 0;
+}
+.single-cart-item > 
+.img-pro > a > img {
+ width: 80px!important;
+}
+.blog-text p{
+    display: -webkit-box !important;
+    height: 75px !important ;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* css nút thêm giỏ hàng là buuton */
+.table-add-cart{
+    width: 126px;
+}
+.table-add-cart .btn-cart{
+    max-width: 450px;
+    border: 2px solid #f6f5f1;
+    background: #ffffff;
+    color: #211e1e;
+    /* display: block; */
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 20px;
+    /* height: 43px; */
+    line-height: 19px;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+.table-add-cart .btn-cart:hover {
+    background: #78a206 none repeat scroll 0 0;
+    border-color: #78a206;
+    color: #ffffff;
+}
+.ht-hero-content-one .title-logo{
+    color: #2c2c2c;
+    font-family: "Playfair Display",serif;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 0.85;
+    visibility: hidden;
+    margin-bottom: 30px;
+}
+.footer-area .footer-top .footer-widget-area .ft-logo .footer-logo{
+    margin-bottom: 14px!important;
+}
+
+/* .footer-area .footer-top .footer-widget-area .single-footer-widget {
+    padding-top: 108px;
+} */
+.bg-contact{
+    background: #F8F8FB!important;
+}
+.fb_ads{
+    width: 100%;
+}
+.blog-area.post-area .single-blog .blog-image a img{
+    height: 250px;
+}
+.blog-area .single-blog .blog-image a img {
+    width: 100%;
+    height: 250px;
+}
+.blog-area .single-blog .blog-text >h4{
+    display: -webkit-box;
+    height: 47px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* .blog-area .single-blog .blog-text >h4{
+
+} */
+.single-product-item .product-text > h5{
+    display: -webkit-box !important;
+    height: 57px !important ;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    margin:10px 0 0 0;
+}
