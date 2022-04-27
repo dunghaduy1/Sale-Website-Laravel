@@ -12,6 +12,7 @@ use App\Models\Attr;
 use App\Models\Feedback_pro;
 use App\User;
 use Auth;
+use DB;
 class ShopController extends Controller
 {
     /**
@@ -19,8 +20,11 @@ class ShopController extends Controller
 	 * @return [type] [description]
 	 */
 	public function shop(){
+        DB::enableQueryLog();
 		$attr=Attr::all();
-		$products=Product::where(['status','=','1'])->orderby('discount','desc')->paginate(9);
+		$products=Product::where('status','1')->paginate(9);
+        // dd($products);
+        // dd(DB::getQueryLog());
 		foreach ($products as $key=> $product) {
 			$details = isset($product->product_details)?$product->product_details:[];
 			if (isset($details[0])){
