@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f50b25adaa5acce9796c1fa446cf148",
+    "content-hash": "6cfe30e7db117ad82ce744078f2e5719",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -112,28 +112,28 @@
         },
         {
             "name": "bumbummen99/shoppingcart",
-            "version": "2.9.1",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bumbummen99/LaravelShoppingcart.git",
-                "reference": "08618b40f5003d3ed792cd746c8cc5bf1dec8f99"
+                "reference": "71dfa94ba8b509e4e3d541963ea53b1129d373a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bumbummen99/LaravelShoppingcart/zipball/08618b40f5003d3ed792cd746c8cc5bf1dec8f99",
-                "reference": "08618b40f5003d3ed792cd746c8cc5bf1dec8f99",
+                "url": "https://api.github.com/repos/bumbummen99/LaravelShoppingcart/zipball/71dfa94ba8b509e4e3d541963ea53b1129d373a1",
+                "reference": "71dfa94ba8b509e4e3d541963ea53b1129d373a1",
                 "shasum": ""
             },
             "require": {
-                "illuminate/events": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0",
-                "illuminate/session": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0",
-                "illuminate/support": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0",
+                "illuminate/events": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0||^9.0",
+                "illuminate/session": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0||^9.0",
+                "illuminate/support": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0||^9.0",
                 "nesbot/carbon": "~1.20||^1.26.3||^2.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^3.4",
-                "phpunit/phpunit": "~5.0||~6.0||~7.0||~8.0"
+                "orchestra/testbench": "^3.4|^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "~5.0||~6.0||~7.0||~8.0||~9.0"
             },
             "suggest": {
                 "gloudemans/notify": "Simple flash notifications for Laravel"
@@ -175,7 +175,11 @@
                 "laravel",
                 "shoppingcart"
             ],
-            "time": "2020-05-08T19:20:56+00:00"
+            "support": {
+                "issues": "https://github.com/bumbummen99/LaravelShoppingcart/issues",
+                "source": "https://github.com/bumbummen99/LaravelShoppingcart/tree/4.1.1"
+            },
+            "time": "2022-04-27T14:48:35+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -6798,5 +6802,5 @@
         "php": "^7.2.5"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.3.0"
 }

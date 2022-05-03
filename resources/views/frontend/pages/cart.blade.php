@@ -38,13 +38,13 @@
                                     <td class="table-p-name">{{ $loop->index + 1 }}</td>
                                     <td class="table-image">
                                         <a
-                                            href="{{ route('product-detail', ['slug' => $cart->slug, 'id_detail' => $cart->id]) }}">
-                                            <img src="{{ url('public/uploads') }}/{{ $cart->image }}" alt="">
+                                            href="{{ route('product-detail', ['slug' => $cart->options['slug'], 'id_detail' => $cart->id]) }}">
+                                            <img src="{{ url('public/uploads') }}/{{ $cart->options['image'] }}" alt="">
                                         </a>
                                     </td>
                                     <td class="table-p-name">
                                         <a
-                                            href="{{ route('product-detail', ['slug' => $cart->slug, 'id_detail' => $cart->id]) }}">
+                                            href="{{ route('product-detail', ['slug' => $cart->options['slug'], 'id_detail' => $cart->id]) }}">
                                             {{ $cart->name }}</a>
                                     </td>
                                     <td class="table-p-name">
