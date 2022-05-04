@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -120,22 +121,23 @@
                         <div class="cart-wrapper">
                             <a href="#">
                                 <i class="icon icon-FullShoppingCart"></i>
-                                <span>{{ $carts->count() }}</span>
+                                <span>{{ Cart::content()->count() }}</span>
                             </a>
                             <div class="cart-item-wrapper">
-                                @foreach ($carts as $cart)
+                                @foreach (Cart::content() as $cart)
+
                                     <div class="single-cart-item">
                                         <div class="cart-img img-pro">
                                             <a
-                                                href="{{ route('product-detail', ['slug' => $cart->slug, 'id_detail' => $cart->id]) }}">
-                                                <img src="{{ url('public/uploads') }}/{{ $cart->image }}" alt=""
+                                                href="{{ route('product-detail', ['slug' => $cart->options['slug'], 'id_detail' => $cart->id]) }}">
+                                                <img src="{{ url('public/uploads') }}/{{ $cart->options['image'] }}" alt=""
                                                     class="">
                                             </a>
                                         </div>
                                         <div class="cart-text-btn">
                                             <div class="cart-text">
                                                 <h5><a
-                                                        href="{{ route('product-detail', ['slug' => $cart->slug, 'id_detail' => $cart->id]) }}">{{ $cart->name }}</a>
+                                                        href="{{ route('product-detail', ['slug' => $cart->options['slug'], 'id_detail' => $cart->id]) }}">{{ $cart->name }}</a>
                                                 </h5>
                                                 <span class="cart-qty col">×{{ $cart->qty }}</span>
                                                 <span class="col">
@@ -385,7 +387,7 @@
                 <div class="row">
                     <div class="col-lg-6 d-flex col-md-6">
                         <div class="footer-text-bottom">
-                            <p>Copyright &copy; <a href="#">Dung Ha Duy</a>. All Rights
+                            <p>Copyright &copy; <a href="#">Do Duc Manh</a>. All Rights
                                 Reserved</p>
                         </div>
                     </div>
