@@ -17,6 +17,22 @@
     <!-- Cart Area Start -->
     <div class="cart-area table-area pt-80 pb-60">
         <div class="container">
+            @if (Session::has('error'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ Session::get('error') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            @endif
+            @if (Session::has('success'))
+                <div class="alert bg-green text-white alert-dismissible fade show" role="alert">
+                    {{ Session::get('success') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            @endif
             @if ($carts->count() > 0)
                 <div class="table-responsive">
                     <table class="table product-table text-center">
@@ -59,7 +75,7 @@
                                             <input value="{{ $cart->qty }}" name="qty" type="number" id="qty" max="">
                                             {{-- <span class="qty-hide"> --}}
                                                 <button class="btn btn-green text-white btn-lg" type="submit" id="submit">
-                                                    
+
                                                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 </button>
                                             {{-- </span> --}}
